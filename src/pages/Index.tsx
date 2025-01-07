@@ -1,14 +1,21 @@
-import React from "react";
-import Header from "@/components/Header";
-import ClinicPresentation from "@/components/ClinicPresentation";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Stats from "../components/Stats";
+import Testimonials from "../components/Testimonials";
+import Blog from "../components/Blog";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <div className="min-h-screen">
       <Header />
       <main>
-        <ClinicPresentation />
+        <Hero />
+        <Features />
+        <Stats />
+        <Testimonials />
+        <Blog />
       </main>
       <Footer />
     </div>

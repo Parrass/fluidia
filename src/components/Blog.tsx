@@ -1,19 +1,19 @@
 const blogPosts = [
   {
-    title: "The Future of AI in Enterprise Solutions",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    title: "A dynamic bank offers a few fresh moves",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     date: "Mar 16, 2024",
     readTime: "5 min read"
   },
   {
-    title: "Machine Learning: A Business Perspective",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    title: "The simple economy goes global",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
     date: "Mar 15, 2024",
     readTime: "3 min read"
   },
   {
-    title: "Transforming Industries with AI",
-    image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f",
+    title: "How fintech builds interactive tech stack",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     date: "Mar 14, 2024",
     readTime: "4 min read"
   }
@@ -24,7 +24,7 @@ const Blog = () => {
     <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          AI Insights & Updates
+          Learn From The Blog
         </h2>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {blogPosts.map((post, index) => (
