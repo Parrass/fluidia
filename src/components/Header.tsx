@@ -1,5 +1,6 @@
 import { Menu, X, Globe } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 import {
   Select,
   SelectContent,
@@ -10,11 +11,10 @@ import {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const { language, setLanguage } = useLanguage();
 
   const handleLanguageChange = (value: string) => {
     setLanguage(value);
-    // Here you would typically trigger a language change in your app
     console.log("Language changed to:", value);
   };
 
