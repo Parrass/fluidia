@@ -1,18 +1,18 @@
 const testimonials = [
   {
-    quote: "Switching to this platform has transformed how we handle payments. The simplicity is unmatched.",
+    quote: "Fluid AI's machine learning solutions have revolutionized our data analysis capabilities. The insights we've gained are invaluable.",
     author: "Sarah Chen",
-    role: "CEO at TechFlow",
+    role: "CTO at TechVision",
     avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop",
   },
   {
-    quote: "The recurring billing feature alone has saved us countless hours of manual work each month.",
+    quote: "Their AI strategy consulting helped us identify and implement the perfect solutions for our business needs.",
     author: "Mark Thompson",
-    role: "Founder of DataSync",
+    role: "CEO of DataSync",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
   },
   {
-    quote: "Their global payment solutions helped us expand into new markets seamlessly.",
+    quote: "The process automation solutions from Fluid AI have significantly improved our operational efficiency.",
     author: "Elena Rodriguez",
     role: "COO at GlobalTech",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
@@ -24,10 +24,10 @@ const Testimonials = () => {
     <section id="testimonials" className="py-16 container-padding bg-neutral-100">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          See What Our Customers Are Saying
+          Client Success Stories
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          Join thousands of businesses that trust us with their payments.
+          See how our AI solutions are transforming businesses across industries.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

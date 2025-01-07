@@ -1,25 +1,25 @@
-import { Check, CreditCard, BarChart, Globe, Clock } from "lucide-react";
+import { Brain, Cpu, BarChart, Workflow } from "lucide-react";
 
 const features = [
   {
-    title: "Simple Checkout",
-    description: "Streamlined checkout process optimized for conversion and user experience.",
-    icon: CreditCard,
+    title: "AI Strategy Consulting",
+    description: "Custom AI roadmaps and strategies tailored to your business objectives and industry challenges.",
+    icon: Brain,
   },
   {
-    title: "Recurring Billing",
-    description: "Automated billing system for subscriptions and recurring payments.",
-    icon: Clock,
+    title: "Machine Learning Solutions",
+    description: "Advanced ML models and algorithms that transform your data into actionable insights.",
+    icon: Cpu,
   },
   {
-    title: "Global Payments",
-    description: "Accept payments from customers anywhere in the world.",
-    icon: Globe,
-  },
-  {
-    title: "Detailed Analytics",
-    description: "Get insights into your business with comprehensive reporting.",
+    title: "Predictive Analytics",
+    description: "Harness the power of data with our predictive modeling and analytics solutions.",
     icon: BarChart,
+  },
+  {
+    title: "Process Automation",
+    description: "Intelligent automation solutions that streamline operations and boost efficiency.",
+    icon: Workflow,
   },
 ];
 
@@ -28,10 +28,10 @@ const Features = () => {
     <section id="features" className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Everything You Need to Run & Grow Your Business
+          Comprehensive AI Solutions for Modern Businesses
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          All the tools and features you need to accept payments, manage subscriptions, and scale your business globally.
+          From strategy to implementation, we provide end-to-end AI services that drive real business value.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
