@@ -4,6 +4,7 @@ import Problems from "../components/Problems";
 import Solution from "../components/Solution";
 import Benefits from "../components/Benefits";
 import HowItWorks from "../components/HowItWorks";
+import Schedule from "../components/Schedule";
 import Bonus from "../components/Bonus";
 import Guarantee from "../components/Guarantee";
 import Footer from "../components/Footer";
@@ -19,6 +20,9 @@ const Index = () => {
           <Solution />
           <Benefits />
           <HowItWorks />
+        </div>
+        <div id="schedule">
+          <Schedule />
         </div>
         <div id="services">
           <Bonus />
