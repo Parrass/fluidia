@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode } from 'react';
 
 type LanguageContextType = {
   language: string;
@@ -8,7 +8,9 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState('en');
+  // Always use Portuguese
+  const language = 'pt-BR';
+  const setLanguage = () => {}; // Empty function since we don't need to change language anymore
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

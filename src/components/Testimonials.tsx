@@ -1,20 +1,20 @@
 const testimonials = [
   {
-    quote: "Fluid AI's machine learning solutions have revolutionized our data analysis capabilities. The insights we've gained are invaluable.",
+    quote: "As soluções de machine learning da Fluid AI revolucionaram nossas capacidades de análise de dados. Os insights que obtivemos são inestimáveis.",
     author: "Sarah Chen",
-    role: "CTO at TechVision",
+    role: "CTO da TechVision",
     avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop",
   },
   {
-    quote: "Their AI strategy consulting helped us identify and implement the perfect solutions for our business needs.",
+    quote: "A consultoria em estratégia de IA deles nos ajudou a identificar e implementar as soluções perfeitas para as necessidades do nosso negócio.",
     author: "Mark Thompson",
-    role: "CEO of DataSync",
+    role: "CEO da DataSync",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
   },
   {
-    quote: "The process automation solutions from Fluid AI have significantly improved our operational efficiency.",
+    quote: "As soluções de automação de processos da Fluid AI melhoraram significativamente nossa eficiência operacional.",
     author: "Elena Rodriguez",
-    role: "COO at GlobalTech",
+    role: "COO da GlobalTech",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
   },
 ];
@@ -24,10 +24,10 @@ const Testimonials = () => {
     <section id="testimonials" className="py-16 container-padding bg-neutral-100">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Client Success Stories
+          Histórias de Sucesso dos Clientes
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          See how our AI solutions are transforming businesses across industries.
+          Veja como nossas soluções de IA estão transformando empresas em diferentes setores.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

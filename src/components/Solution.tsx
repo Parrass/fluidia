@@ -3,18 +3,18 @@ import { Bot, Clock, Zap } from "lucide-react";
 const features = [
   {
     icon: <Bot className="w-8 h-8 text-accent" />,
-    title: "Intelligent Automation",
-    description: "Our AI agents handle routine tasks and customer interactions automatically."
+    title: "Automação Inteligente",
+    description: "Nossos agentes de IA lidam com tarefas rotineiras e interações com clientes automaticamente."
   },
   {
     icon: <Clock className="w-8 h-8 text-accent" />,
-    title: "24/7 Availability",
-    description: "Never miss an opportunity with round-the-clock customer engagement."
+    title: "Disponibilidade 24/7",
+    description: "Nunca perca uma oportunidade com engajamento contínuo com o cliente."
   },
   {
     icon: <Zap className="w-8 h-8 text-accent" />,
-    title: "Easy Integration",
-    description: "Seamlessly integrate our AI agents with your existing business systems."
+    title: "Integração Fácil",
+    description: "Integre perfeitamente nossos agentes de IA com seus sistemas existentes."
   }
 ];
 
@@ -23,10 +23,10 @@ const Solution = () => {
     <section className="py-16 container-padding bg-primary text-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Meet Your AI Solution
+          Conheça Sua Solução de IA
         </h2>
         <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
-          Transform your business operations with our advanced AI agents.
+          Transforme suas operações de negócio com nossos agentes de IA avançados.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (

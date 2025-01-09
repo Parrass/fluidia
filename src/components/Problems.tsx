@@ -3,18 +3,18 @@ import { AlertCircle, Clock, UserX } from "lucide-react";
 const problems = [
   {
     icon: <Clock className="w-8 h-8 text-accent" />,
-    title: "Slow Response Times",
-    description: "Manual processes and limited availability lead to delayed customer responses and lost opportunities."
+    title: "Tempo de Resposta Lento",
+    description: "Processos manuais e disponibilidade limitada levam a respostas atrasadas e oportunidades perdidas."
   },
   {
     icon: <UserX className="w-8 h-8 text-accent" />,
-    title: "Lead Loss",
-    description: "Without 24/7 engagement, potential customers slip away during off-hours and peak times."
+    title: "Perda de Leads",
+    description: "Sem engajamento 24/7, clientes potenciais são perdidos durante horários não comerciais e picos de demanda."
   },
   {
     icon: <AlertCircle className="w-8 h-8 text-accent" />,
-    title: "Manual Processes",
-    description: "Repetitive tasks consume valuable time that could be spent on strategic business growth."
+    title: "Processos Manuais",
+    description: "Tarefas repetitivas consomem tempo valioso que poderia ser usado no crescimento estratégico do negócio."
   }
 ];
 
@@ -23,10 +23,10 @@ const Problems = () => {
     <section className="py-16 container-padding bg-neutral-100">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Common Business Challenges
+          Desafios Comuns dos Negócios
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          Businesses today face critical operational hurdles that impact growth and efficiency.
+          As empresas hoje enfrentam obstáculos operacionais críticos que impactam o crescimento e a eficiência.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (

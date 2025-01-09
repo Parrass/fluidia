@@ -2,23 +2,23 @@ import { Brain, Cpu, BarChart, Workflow } from "lucide-react";
 
 const features = [
   {
-    title: "AI Strategy Consulting",
-    description: "Custom AI roadmaps and strategies tailored to your business objectives and industry challenges.",
+    title: "Consultoria em Estratégia de IA",
+    description: "Roteiros e estratégias de IA personalizados para seus objetivos de negócio e desafios do setor.",
     icon: Brain,
   },
   {
-    title: "Machine Learning Solutions",
-    description: "Advanced ML models and algorithms that transform your data into actionable insights.",
+    title: "Soluções de Machine Learning",
+    description: "Modelos e algoritmos avançados de ML que transformam seus dados em insights acionáveis.",
     icon: Cpu,
   },
   {
-    title: "Predictive Analytics",
-    description: "Harness the power of data with our predictive modeling and analytics solutions.",
+    title: "Análise Preditiva",
+    description: "Aproveite o poder dos dados com nossas soluções de modelagem e análise preditiva.",
     icon: BarChart,
   },
   {
-    title: "Process Automation",
-    description: "Intelligent automation solutions that streamline operations and boost efficiency.",
+    title: "Automação de Processos",
+    description: "Soluções inteligentes de automação que otimizam operações e aumentam a eficiência.",
     icon: Workflow,
   },
 ];
@@ -28,10 +28,10 @@ const Features = () => {
     <section id="features" className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Comprehensive AI Solutions for Modern Businesses
+          Soluções Abrangentes de IA para Empresas Modernas
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          From strategy to implementation, we provide end-to-end AI services that drive real business value.
+          Da estratégia à implementação, fornecemos serviços completos de IA que geram valor real para o negócio.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (

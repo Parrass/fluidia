@@ -3,18 +3,18 @@ import { Gift, BookOpen, Headphones, Zap } from "lucide-react";
 const bonuses = [
   {
     icon: <BookOpen className="w-8 h-8 text-accent" />,
-    title: "Free Training",
-    description: "Comprehensive training on maximizing your AI agent's potential."
+    title: "Treinamento Gratuito",
+    description: "Treinamento completo para maximizar o potencial do seu agente de IA."
   },
   {
     icon: <Headphones className="w-8 h-8 text-accent" />,
-    title: "Priority Support",
-    description: "Direct access to our technical team for quick assistance."
+    title: "Suporte Prioritário",
+    description: "Acesso direto à nossa equipe técnica para assistência rápida."
   },
   {
     icon: <Zap className="w-8 h-8 text-accent" />,
-    title: "Performance Analytics",
-    description: "Detailed insights and reporting on your AI agent's impact."
+    title: "Análise de Desempenho",
+    description: "Insights detalhados e relatórios sobre o impacto do seu agente de IA."
   }
 ];
 
@@ -25,11 +25,11 @@ const Bonus = () => {
         <div className="flex items-center justify-center mb-8">
           <Gift className="w-12 h-12 text-accent mr-4" />
           <h2 className="text-3xl md:text-4xl font-bold">
-            Exclusive Bonuses
+            Bônus Exclusivos
           </h2>
         </div>
         <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
-          Get these valuable extras when you start today.
+          Receba estes extras valiosos ao começar hoje.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => (

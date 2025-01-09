@@ -1,37 +1,4 @@
 export const translations = {
-  en: {
-    hero: {
-      title: "Transforming Businesses Through Artificial Intelligence",
-      subtitle: "We craft intelligent solutions that drive innovation and growth. Our AI expertise helps businesses automate, optimize, and revolutionize their operations.",
-      cta: "Start Your AI Journey",
-      viewWork: "View Our Work"
-    },
-    problems: {
-      title: "Common Business Challenges",
-      description: "Businesses today face critical operational hurdles that impact growth and efficiency."
-    },
-    solution: {
-      title: "Meet Your AI Solution",
-      description: "Transform your business operations with our advanced AI agents."
-    },
-    benefits: {
-      title: "Transform Your Business",
-      description: "Experience the power of AI-driven automation and growth."
-    },
-    howItWorks: {
-      title: "How It Works",
-      description: "Get started with your AI agent in three simple steps."
-    },
-    testimonials: {
-      title: "Client Success Stories",
-      description: "See how our AI solutions are transforming businesses across industries."
-    },
-    guarantee: {
-      title: "30-Day Money-Back Guarantee",
-      description: "Try our AI agent risk-free. If you're not completely satisfied within 30 days, we'll refund your investment - no questions asked.",
-      cta: "Get Started Risk-Free"
-    }
-  },
   "pt-BR": {
     hero: {
       title: "Transformando Negócios Através da Inteligência Artificial",
