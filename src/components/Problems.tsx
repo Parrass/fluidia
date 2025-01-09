@@ -20,7 +20,7 @@ const problems = [
 
 const Problems = () => {
   return (
-    <section className="py-16 container-padding bg-neutral-100">
+    <section className="py-16 container-padding bg-gradient-to-b from-neutral-50 to-neutral-100/50 transition-colors duration-500">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Desafios Comuns dos Negócios
@@ -30,7 +30,7 @@ const Problems = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <div key={index} className="glass-card p-6 rounded-xl">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:transform hover:-translate-y-1">
               <div className="mb-4">{problem.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>
               <p className="text-neutral-600">{problem.description}</p>
