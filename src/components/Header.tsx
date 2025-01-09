@@ -8,10 +8,22 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        theme: "dark",
+        styles: { branding: { brandColor: "#8989DE" } },
+      });
+    })();
+  }, []);
 
   const handleScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
@@ -88,41 +100,30 @@ const Header = () => {
       </header>
 
       <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>Entre em Contato</DialogTitle>
-            <DialogDescription>
-              Deixe seus dados que entraremos em contato em breve.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid gap-2">
-              <label htmlFor="name" className="text-sm font-medium">
-                Nome
-              </label>
-              <input
-                id="name"
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                placeholder="Seu nome completo"
-              />
-            </div>
-            <div className="grid gap-2">
-              <label htmlFor="email" className="text-sm font-medium">
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                placeholder="seu@email.com"
-              />
-            </div>
-            <Button type="submit" className="mt-4">
-              Enviar
-            </Button>
-          </div>
+        <DialogContent className="sm:max-w-[600px] p-0">
+          <Cal
+            calLink="your-organization/meeting"
+            style={{width: "100%", height: "100%", minHeight: "600px"}}
+            config={{
+              layout: "month_view",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
+            }}
+          />
         </DialogContent>
       </Dialog>
+
+      {/* Cal.com Embed Script */}
+      <Cal 
+        calLink=""
+        style={{width: "0", height: "0"}}
+        config={{
+          name: "Fluid AI",
+          email: "",
+          notes: "",
+          theme: "dark",
+        }}
+      />
     </>
   );
 };
