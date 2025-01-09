@@ -6,6 +6,13 @@ const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
 
+  const scrollToSchedule = () => {
+    const scheduleElement = document.getElementById('schedule');
+    if (scheduleElement) {
+      scheduleElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="pt-32 pb-16 container-padding relative overflow-hidden">
       {/* Background gradient effect */}
@@ -20,11 +27,17 @@ const Hero = () => {
           {t.hero.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors flex items-center justify-center gap-2">
+          <button 
+            onClick={scrollToSchedule}
+            className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors flex items-center justify-center gap-2"
+          >
             {t.hero.cta}
             <ArrowRight className="w-4 h-4" />
           </button>
-          <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors">
+          <button 
+            onClick={scrollToSchedule}
+            className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors"
+          >
             {t.hero.viewWork}
           </button>
         </div>
