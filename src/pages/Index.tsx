@@ -4,7 +4,6 @@ import Problems from "../components/Problems";
 import Solution from "../components/Solution";
 import Benefits from "../components/Benefits";
 import HowItWorks from "../components/HowItWorks";
-import Testimonials from "../components/Testimonials";
 import Bonus from "../components/Bonus";
 import Guarantee from "../components/Guarantee";
 import Footer from "../components/Footer";
@@ -16,12 +15,15 @@ const Index = () => {
       <main>
         <Hero />
         <Problems />
-        <Solution />
-        <Benefits />
-        <HowItWorks />
-        <Testimonials />
-        <Bonus />
-        <Guarantee />
+        <div id="solutions">
+          <Solution />
+          <Benefits />
+          <HowItWorks />
+        </div>
+        <div id="services">
+          <Bonus />
+          <Guarantee />
+        </div>
       </main>
       <Footer />
     </div>
