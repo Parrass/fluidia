@@ -25,7 +25,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 container-padding">
+    <section id="features" className="py-16 container-padding bg-gradient-to-br from-neutral-50 via-accent/5 to-neutral-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Soluções Abrangentes de IA para Empresas Modernas
@@ -35,7 +35,7 @@ const Features = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="glass-card p-8 rounded-xl">
+            <div key={index} className="glass-card p-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-accent/10 p-3 rounded-lg">
                   <feature.icon className="w-6 h-6 text-accent" />

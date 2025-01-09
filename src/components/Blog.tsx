@@ -21,14 +21,14 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="py-16 container-padding">
+    <section className="py-16 container-padding bg-gradient-to-br from-neutral-50 via-accent/5 to-neutral-50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           AI Insights & Updates
         </h2>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {blogPosts.map((post, index) => (
-            <div key={index} className="glass-card rounded-xl overflow-hidden group cursor-pointer">
+            <div key={index} className="glass-card rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={post.image} 
