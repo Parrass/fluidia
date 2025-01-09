@@ -20,11 +20,11 @@ const Hero = () => {
           {t.hero.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105">
+          <button className="bg-accent text-white px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors flex items-center justify-center gap-2">
             {t.hero.cta}
             <ArrowRight className="w-4 h-4" />
           </button>
-          <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">
+          <button className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors">
             {t.hero.viewWork}
           </button>
         </div>

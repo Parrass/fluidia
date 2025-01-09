@@ -20,7 +20,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-16 container-padding bg-gradient-to-br from-neutral-50 via-white to-neutral-50">
+    <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Transforme Seu Negócio
@@ -30,7 +30,7 @@ const Benefits = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center p-8 glass-card rounded-xl transition-all duration-300 hover:scale-105">
+            <div key={index} className="text-center">
               <div className="mb-4 flex justify-center">{benefit.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
               <p className="text-neutral-600">{benefit.description}</p>

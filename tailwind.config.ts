@@ -68,23 +68,12 @@ export default {
             "background-position": "right center",
           },
         },
-        pulse: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' },
-        },
-        "move-background": {
-          "0%": { transform: "translate(0, 0)" },
-          "50%": { transform: "translate(100px, 50px)" },
-          "100%": { transform: "translate(0, 0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 6s ease-in-out infinite",
         "gradient-x": "gradient-x 15s ease infinite",
-        "pulse-slow": "pulse 4s ease-in-out infinite",
-        "move-bg": "move-background 20s ease-in-out infinite",
       },
     },
   },

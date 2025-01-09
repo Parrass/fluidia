@@ -20,9 +20,8 @@ const bonuses = [
 
 const Bonus = () => {
   return (
-    <section className="py-16 container-padding bg-gradient-to-br from-primary via-primary/90 to-primary text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px] animate-move-bg"></div>
-      <div className="max-w-4xl mx-auto relative z-10">
+    <section className="py-16 container-padding bg-primary text-white">
+      <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-8">
           <Gift className="w-12 h-12 text-accent mr-4" />
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -34,7 +33,7 @@ const Bonus = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-white/20">
+            <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
               <div className="mb-4">{bonus.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{bonus.title}</h3>
               <p className="text-neutral-300">{bonus.description}</p>

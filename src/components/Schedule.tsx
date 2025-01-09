@@ -14,7 +14,7 @@ const Schedule = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-neutral-50 via-accent/5 to-neutral-50 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50/50 -z-10" />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Agende uma Consulta Gratuita</h2>
@@ -22,7 +22,7 @@ const Schedule = () => {
             Escolha o melhor horário para conversarmos sobre como podemos ajudar sua empresa a crescer com automação inteligente.
           </p>
         </div>
-        <div className="w-full max-w-4xl mx-auto glass-card rounded-2xl p-4 mb-24">
+        <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-4 mb-24">
           <div className="h-[600px] sm:h-[700px] w-full">
             <Cal
               namespace="reuniao-de-automacoes-com-ia"
