@@ -3,9 +3,6 @@ import { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import Cal, { getCalApi } from "@calcom/embed-react";
@@ -17,10 +14,10 @@ const Header = () => {
 
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi();
+      const cal = await getCalApi({"namespace":"reuniao-de-automacoes-com-ia"});
       cal("ui", {
-        theme: "dark",
-        styles: { branding: { brandColor: "#8989DE" } },
+        "hideEventTypeDetails": false,
+        "layout": "month_view"
       });
     })();
   }, []);
@@ -102,12 +99,12 @@ const Header = () => {
       <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
         <DialogContent className="sm:max-w-[600px] p-0">
           <Cal
+            namespace="reuniao-de-automacoes-com-ia"
             calLink="luiz-parras/reuniao-de-automacoes-com-ia"
-            style={{width: "100%", height: "100%", minHeight: "600px"}}
+            style={{width:"100%", height:"100%", minHeight:"600px", overflow:"scroll"}}
             config={{
               layout: "month_view",
-              hideEventTypeDetails: "false",
-              hideLandingPageDetails: "false",
+              hideEventTypeDetails: false,
             }}
           />
         </DialogContent>
@@ -115,13 +112,12 @@ const Header = () => {
 
       {/* Cal.com Embed Script */}
       <Cal 
+        namespace="reuniao-de-automacoes-com-ia"
         calLink="luiz-parras/reuniao-de-automacoes-com-ia"
-        style={{width: "0", height: "0"}}
+        style={{width:"0", height:"0"}}
         config={{
-          name: "Fluid AI",
-          email: "",
-          notes: "",
-          theme: "dark",
+          layout: "month_view",
+          hideEventTypeDetails: false,
         }}
       />
     </>
