@@ -102,12 +102,12 @@ const Header = () => {
       <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
         <DialogContent className="sm:max-w-[600px] p-0">
           <Cal
-            calLink="your-organization/meeting"
+            calLink="fluid-ai/30min"
             style={{width: "100%", height: "100%", minHeight: "600px"}}
             config={{
               layout: "month_view",
-              hideEventTypeDetails: false,
-              hideLandingPageDetails: false,
+              hideEventTypeDetails: "false",
+              hideLandingPageDetails: "false",
             }}
           />
         </DialogContent>
@@ -115,7 +115,7 @@ const Header = () => {
 
       {/* Cal.com Embed Script */}
       <Cal 
-        calLink=""
+        calLink="fluid-ai/30min"
         style={{width: "0", height: "0"}}
         config={{
           name: "Fluid AI",
