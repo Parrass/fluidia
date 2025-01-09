@@ -46,16 +46,14 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 relative">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto relative">
           {steps.map((step, index) => (
-            <div key={index} className="relative group">
+            <div key={index} className="relative flex-1 px-4 mb-8 md:mb-0">
               <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative z-10">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-2xl">
-                    {step.number}
-                  </div>
-                  <step.icon className="w-7 h-7 text-blue-600" />
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-2xl mb-6">
+                  {step.number}
                 </div>
+                <step.icon className="w-7 h-7 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
                 <p className="text-gray-600 mb-8">{step.description}</p>
                 <Button 
@@ -66,7 +64,10 @@ const HowItWorks = () => {
                 </Button>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 left-full w-8 border-t-2 border-dashed border-blue-300 z-0 transform -translate-y-1/2 translate-x-4" />
+                <div className="hidden md:block absolute top-1/2 right-0 w-full h-2 z-0">
+                  <div className="h-1 w-full bg-gradient-to-r from-blue-600 to-indigo-600 transform translate-x-4" />
+                  <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-indigo-600" />
+                </div>
               )}
             </div>
           ))}
