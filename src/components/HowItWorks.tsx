@@ -3,30 +3,30 @@ import { CheckCircle2 } from "lucide-react";
 const steps = [
   {
     number: "1",
-    title: "Choose Your Plan",
-    description: "Select the AI agent package that best fits your business needs."
+    title: "Escolha seu Plano",
+    description: "Selecione o pacote de agente de IA que melhor atende às necessidades do seu negócio."
   },
   {
     number: "2",
-    title: "Quick Setup",
-    description: "We'll configure your AI agent to match your business requirements."
+    title: "Configuração Rápida",
+    description: "Configuraremos seu agente de IA de acordo com os requisitos do seu negócio."
   },
   {
     number: "3",
-    title: "Go Live",
-    description: "Your AI agent starts working immediately, handling tasks 24/7."
+    title: "Ativação",
+    description: "Seu agente de IA começa a trabalhar imediatamente, gerenciando tarefas 24/7."
   }
 ];
 
 const HowItWorks = () => {
   return (
-    <section className="py-16 container-padding bg-neutral-100">
+    <section className="py-16 container-padding bg-white/90 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          How It Works
+          Como Funciona
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          Get started with your AI agent in three simple steps.
+          Comece com seu agente de IA em três etapas simples.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
