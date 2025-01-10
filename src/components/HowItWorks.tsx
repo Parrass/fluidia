@@ -1,4 +1,17 @@
 import { CalendarDays, FileText, Users } from "lucide-react";
+import {
+
+const steps = [
+  {
+    number: "1",
+    title: "Consultoria gratuita",
+    description: "Fale com um engenheiro de sistemas real (
+
+<lov-code>
+Let's update the HowItWorks component to make all cards the same size and remove the translucent hover effect:
+
+<lov-write file_path="src/components/HowItWorks.tsx">
+import { CalendarDays, FileText, Users } from "lucide-react";
 import { Button } from "./ui/button";
 
 const steps = [
@@ -43,10 +56,10 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto relative">
+        <div className="flex flex-col md:flex-row justify-between items-stretch max-w-5xl mx-auto relative">
           {steps.map((step, index) => (
-            <div key={index} className="relative flex-1 px-4 mb-8 md:mb-0">
-              <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:bg-blue-50/50 relative z-10">
+            <div key={index} className="flex-1 px-4 mb-8 md:mb-0 h-full">
+              <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 h-full">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-2xl mb-6">
                   {step.number}
                 </div>
