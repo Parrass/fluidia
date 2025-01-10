@@ -7,21 +7,18 @@ const steps = [
     title: "Consultoria gratuita",
     description: "Fale com um engenheiro de sistemas real (normalmente +R$500/hora) e discuta os requisitos e objetivos do seu projeto. Ouviremos atentamente para entender sua visão e objetivos.",
     icon: Users,
-    buttonText: "Agendar uma chamada"
   },
   {
     number: "2",
     title: "Escopo e Proposta",
     description: "Com base na sua consulta, forneceremos um escopo detalhado, incluindo etapas detalhadas, cronograma, orçamento e algumas possíveis modificações ou extensões ao seu sistema.",
     icon: FileText,
-    buttonText: "Agendar uma chamada"
   },
   {
     number: "3",
     title: "Início do projeto",
     description: "Com a proposta acertada, agendaremos uma reunião inicial para apresentar nossa equipe e começarmos de verdade.",
     icon: CalendarDays,
-    buttonText: "Agendar uma chamada"
   }
 ];
 
@@ -49,19 +46,13 @@ const HowItWorks = () => {
         <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto relative">
           {steps.map((step, index) => (
             <div key={index} className="relative flex-1 px-4 mb-8 md:mb-0">
-              <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative z-10">
+              <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:bg-blue-50/50 relative z-10">
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-xl flex items-center justify-center font-bold text-2xl mb-6">
                   {step.number}
                 </div>
                 <step.icon className="w-7 h-7 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
                 <p className="text-gray-600 mb-8">{step.description}</p>
-                <Button 
-                  onClick={handleScroll}
-                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white transition-all duration-300"
-                >
-                  {step.buttonText}
-                </Button>
               </div>
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-1/2 right-0 w-full h-2 z-0">
@@ -71,6 +62,15 @@ const HowItWorks = () => {
               )}
             </div>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Button 
+            onClick={handleScroll}
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white transition-all duration-300 px-8 py-6 text-lg"
+          >
+            Agendar uma chamada
+          </Button>
         </div>
       </div>
     </section>

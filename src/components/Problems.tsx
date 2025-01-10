@@ -30,7 +30,7 @@ const Problems = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <div key={index} className="glass-card p-6 rounded-xl">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="mb-4">{problem.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>
               <p className="text-neutral-600">{problem.description}</p>

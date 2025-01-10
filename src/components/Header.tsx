@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-4 left-4 right-4 z-50">
-      <nav className="container-padding mx-auto flex h-16 items-center justify-between bg-neutral-900/70 backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg">
+      <nav className="container-padding mx-auto flex h-16 items-center justify-between bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl shadow-lg">
         <a href="/" className="text-xl font-semibold text-white hover:text-accent transition-colors">
           Fluid AI
         </a>
@@ -23,13 +23,13 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-8">
           <button 
             onClick={() => handleScroll('solutions')} 
-            className="text-neutral-400 hover:text-white transition-colors"
+            className="text-neutral-200 hover:text-white transition-colors"
           >
             Soluções
           </button>
           <button 
             onClick={() => handleScroll('services')} 
-            className="text-neutral-400 hover:text-white transition-colors"
+            className="text-neutral-200 hover:text-white transition-colors"
           >
             Serviços
           </button>
@@ -50,17 +50,17 @@ const Header = () => {
       </nav>
 
       {isMenuOpen && (
-        <div className="md:hidden mt-2 container-padding py-4 bg-neutral-900/70 backdrop-blur-xl border border-white/10 rounded-2xl">
+        <div className="md:hidden mt-2 container-padding py-4 bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl">
           <div className="flex flex-col gap-4">
             <button 
               onClick={() => handleScroll('solutions')} 
-              className="text-neutral-400 hover:text-white transition-colors text-left"
+              className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Soluções
             </button>
             <button 
               onClick={() => handleScroll('services')} 
-              className="text-neutral-400 hover:text-white transition-colors text-left"
+              className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Serviços
             </button>
