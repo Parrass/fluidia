@@ -1,17 +1,4 @@
 import { CalendarDays, FileText, Users } from "lucide-react";
-import {
-
-const steps = [
-  {
-    number: "1",
-    title: "Consultoria gratuita",
-    description: "Fale com um engenheiro de sistemas real (
-
-<lov-code>
-Let's update the HowItWorks component to make all cards the same size and remove the translucent hover effect:
-
-<lov-write file_path="src/components/HowItWorks.tsx">
-import { CalendarDays, FileText, Users } from "lucide-react";
 import { Button } from "./ui/button";
 
 const steps = [
