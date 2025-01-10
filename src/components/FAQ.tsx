@@ -1,4 +1,4 @@
-import { Plus } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -53,7 +53,7 @@ const FAQ = () => {
                 <span className="text-left font-semibold group-hover:text-accent transition-colors">
                   {faq.question}
                 </span>
-                <Plus className="h-5 w-5 shrink-0 text-accent transition-transform duration-200 group-data-[state=open]:rotate-45" />
+                <ChevronDown className="h-5 w-5 shrink-0 text-accent transition-transform duration-200 group-data-[state=open]:rotate-180" />
               </AccordionTrigger>
               <AccordionContent className="text-neutral-600 pb-4">
                 {faq.answer}
