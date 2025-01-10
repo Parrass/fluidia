@@ -22,18 +22,18 @@ const Solution = () => {
   return (
     <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Conheça Sua Solução de IA
         </h2>
-        <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
           Transforme suas operações de negócio com nossos agentes de IA avançados.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 backdrop-blur-lg bg-white/10">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-              <p className="text-neutral-300">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-neutral-600">{feature.description}</p>
             </div>
           ))}
         </div>
