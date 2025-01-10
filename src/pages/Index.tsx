@@ -7,6 +7,7 @@ import HowItWorks from "../components/HowItWorks";
 import Schedule from "../components/Schedule";
 import Bonus from "../components/Bonus";
 import Guarantee from "../components/Guarantee";
+import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -27,13 +28,12 @@ const Index = () => {
           <Benefits />
           <HowItWorks />
         </div>
+        <Bonus />
+        <Guarantee />
         <div id="schedule">
           <Schedule />
         </div>
-        <div id="services">
-          <Bonus />
-          <Guarantee />
-        </div>
+        <FAQ />
       </main>
       <Footer />
     </div>
