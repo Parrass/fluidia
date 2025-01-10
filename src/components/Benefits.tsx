@@ -20,20 +20,20 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-16 container-padding">
+    <section className="py-16 container-padding bg-gradient-to-b from-primary to-transparent">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
           Transforme Seu Negócio
         </h2>
-        <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
           Experimente o poder da automação e crescimento impulsionados por IA.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 backdrop-blur-lg bg-white/10">
               <div className="mb-4 flex justify-center">{benefit.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-neutral-600">{benefit.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{benefit.title}</h3>
+              <p className="text-neutral-300">{benefit.description}</p>
             </div>
           ))}
         </div>

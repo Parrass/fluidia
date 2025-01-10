@@ -20,20 +20,20 @@ const problems = [
 
 const Problems = () => {
   return (
-    <section className="py-16 container-padding bg-neutral-100">
+    <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
           Desafios Comuns dos Negócios
         </h2>
-        <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
           As empresas hoje enfrentam obstáculos operacionais críticos que impactam o crescimento e a eficiência.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 backdrop-blur-lg bg-white/10">
               <div className="mb-4">{problem.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{problem.title}</h3>
-              <p className="text-neutral-600">{problem.description}</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">{problem.title}</h3>
+              <p className="text-neutral-300">{problem.description}</p>
             </div>
           ))}
         </div>

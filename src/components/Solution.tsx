@@ -20,9 +20,9 @@ const features = [
 
 const Solution = () => {
   return (
-    <section className="py-16 container-padding bg-primary text-white">
+    <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
           Conheça Sua Solução de IA
         </h2>
         <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
@@ -30,9 +30,9 @@ const Solution = () => {
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2 backdrop-blur-lg bg-white/10">
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
               <p className="text-neutral-300">{feature.description}</p>
             </div>
           ))}

@@ -20,7 +20,7 @@ const bonuses = [
 
 const Bonus = () => {
   return (
-    <section className="py-16 container-padding bg-primary text-white">
+    <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-center mb-8">
           <Gift className="w-12 h-12 text-accent mr-4" />
@@ -28,15 +28,15 @@ const Bonus = () => {
             Bônus Exclusivos
           </h2>
         </div>
-        <p className="text-neutral-300 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
           Receba estes extras valiosos ao começar hoje.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+            <div key={index} className="glass-card p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
               <div className="mb-4">{bonus.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{bonus.title}</h3>
-              <p className="text-neutral-300">{bonus.description}</p>
+              <p className="text-neutral-600">{bonus.description}</p>
             </div>
           ))}
         </div>
