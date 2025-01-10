@@ -4,8 +4,25 @@ import { Button } from "@/components/ui/button";
 
 const FluidLogo = () => {
   return (
-    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center text-white font-bold text-xl transform rotate-12 shadow-lg">
-      F
+    <div className="relative w-8 h-8 flex items-center justify-center">
+      <div className="absolute w-6 h-6 bg-accent/40 rounded-full animate-float" 
+        style={{ 
+          animationDelay: "0.2s",
+          transform: "translateX(-4px)"
+        }} 
+      />
+      <div className="absolute w-6 h-6 bg-accent/60 rounded-full animate-float" 
+        style={{ 
+          animationDelay: "0.4s",
+          transform: "translateX(0px)"
+        }} 
+      />
+      <div className="absolute w-6 h-6 bg-accent rounded-full animate-float" 
+        style={{ 
+          animationDelay: "0.6s",
+          transform: "translateX(4px)"
+        }} 
+      />
     </div>
   );
 };
