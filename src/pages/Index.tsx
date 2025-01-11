@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Problems from "../components/Problems";
 import Solution from "../components/Solution";
 import Benefits from "../components/Benefits";
+import VirtualAssistantFeatures from "../components/VirtualAssistantFeatures";
 import HowItWorks from "../components/HowItWorks";
 import Schedule from "../components/Schedule";
 import Bonus from "../components/Bonus";
@@ -27,6 +28,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-neutral-50/50 via-neutral-100/50 to-neutral-50/50 -z-10" />
           <Problems />
           <Solution />
+          <VirtualAssistantFeatures />
           <Benefits />
         </div>
         <div className="relative">
