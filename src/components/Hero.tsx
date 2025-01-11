@@ -9,7 +9,7 @@ const Hero = () => {
   const scrollToSchedule = () => {
     const scheduleElement = document.getElementById('schedule');
     if (scheduleElement) {
-      const offset = 100; // Offset to account for fixed header
+      const offset = 100;
       const elementPosition = scheduleElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       
@@ -36,7 +36,7 @@ const Hero = () => {
 
   return (
     <section className="pt-32 pb-16 container-padding relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent/30 to-primary animate-gradient-x" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent/80 animate-gradient-x" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance leading-tight text-white">
