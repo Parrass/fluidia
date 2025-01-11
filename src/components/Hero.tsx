@@ -20,6 +20,20 @@ const Hero = () => {
     }
   };
 
+  const scrollToSolution = () => {
+    const solutionElement = document.getElementById('solution');
+    if (solutionElement) {
+      const offset = 100;
+      const elementPosition = solutionElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="pt-32 pb-16 container-padding relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent/30 to-primary animate-gradient-x" />
@@ -40,19 +54,7 @@ const Hero = () => {
             <ArrowRight className="w-4 h-4" />
           </button>
           <button 
-            onClick={() => {
-              const solutionsElement = document.getElementById('solutions');
-              if (solutionsElement) {
-                const offset = 100;
-                const elementPosition = solutionsElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - offset;
-                
-                window.scrollTo({
-                  top: offsetPosition,
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={scrollToSolution}
             className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors"
           >
             {t.hero.viewWork}
