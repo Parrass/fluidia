@@ -22,10 +22,8 @@ const Hero = () => {
 
   return (
     <section className="pt-32 pb-16 container-padding relative overflow-hidden">
-      {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent/30 to-primary animate-gradient-x" />
       
-      {/* Content with glass effect */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance leading-tight text-white">
           {t.hero.title}
@@ -43,10 +41,10 @@ const Hero = () => {
           </button>
           <button 
             onClick={() => {
-              const problemsElement = document.getElementById('problems');
-              if (problemsElement) {
+              const solutionsElement = document.getElementById('solutions');
+              if (solutionsElement) {
                 const offset = 100;
-                const elementPosition = problemsElement.getBoundingClientRect().top;
+                const elementPosition = solutionsElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - offset;
                 
                 window.scrollTo({

@@ -41,13 +41,13 @@ const Header = () => {
         
         <div className="hidden md:flex items-center gap-8">
           <button 
-            onClick={() => handleScroll('problems')} 
+            onClick={() => handleScroll('solutions')} 
             className="text-neutral-200 hover:text-white transition-colors"
           >
             Soluções
           </button>
           <button 
-            onClick={() => handleScroll('benefits')} 
+            onClick={() => handleScroll('services')} 
             className="text-neutral-200 hover:text-white transition-colors"
           >
             Serviços
@@ -72,13 +72,13 @@ const Header = () => {
         <div className="md:hidden mt-2 container-padding py-4 bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl">
           <div className="flex flex-col gap-4">
             <button 
-              onClick={() => handleScroll('problems')} 
+              onClick={() => handleScroll('solutions')} 
               className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Soluções
             </button>
             <button 
-              onClick={() => handleScroll('benefits')} 
+              onClick={() => handleScroll('services')} 
               className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Serviços

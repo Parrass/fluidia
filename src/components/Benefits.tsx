@@ -20,7 +20,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="py-16 container-padding">
+    <section id="services" className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Transforme Seu Negócio

@@ -25,7 +25,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 container-padding">
+    <section id="solutions" className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Soluções Abrangentes de IA para Empresas Modernas
