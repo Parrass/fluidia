@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 const FluidLogo = () => {
   return (
     <div className="relative w-8 h-8 flex items-center">
-      <div className="absolute w-4 h-4 rounded-full bg-accent/80 animate-float" style={{ left: '0px' }} />
-      <div className="absolute w-4 h-4 rounded-full bg-accent/80 animate-float" style={{ left: '8px', animationDelay: '0.2s' }} />
-      <div className="absolute w-4 h-4 rounded-full bg-accent/80 animate-float" style={{ left: '16px', animationDelay: '0.4s' }} />
+      <div className="absolute w-3 h-3 rounded-full bg-accent/80 animate-float" style={{ left: '0px' }} />
+      <div className="absolute w-3 h-3 rounded-full bg-accent/80 animate-float" style={{ left: '4px', animationDelay: '0.2s' }} />
+      <div className="absolute w-3 h-3 rounded-full bg-accent/80 animate-float" style={{ left: '8px', animationDelay: '0.4s' }} />
+      <div className="absolute w-3 h-3 rounded-full bg-accent/80 animate-float" style={{ left: '12px', animationDelay: '0.6s' }} />
+      <div className="absolute w-3 h-3 rounded-full bg-accent/80 animate-float" style={{ left: '16px', animationDelay: '0.8s' }} />
     </div>
   );
 };
