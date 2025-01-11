@@ -1,6 +1,20 @@
 import { Shield } from "lucide-react";
 
 const Guarantee = () => {
+  const handleScroll = () => {
+    const element = document.getElementById('schedule');
+    if (element) {
+      const offset = 100; // Offset para considerar o header fixo
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="py-16 container-padding">
       <div className="max-w-4xl mx-auto text-center">
@@ -11,7 +25,10 @@ const Guarantee = () => {
         <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">
           Experimente nosso agente de IA sem riscos. Se você não estiver completamente satisfeito em 30 dias, devolvemos seu investimento - sem perguntas.
         </p>
-        <button className="bg-accent text-white px-8 py-4 rounded-lg hover:bg-accent/90 transition-colors text-lg font-semibold">
+        <button 
+          onClick={handleScroll}
+          className="bg-accent text-white px-8 py-4 rounded-lg hover:bg-accent/90 transition-colors text-lg font-semibold"
+        >
           Comece Sem Riscos
         </button>
       </div>
