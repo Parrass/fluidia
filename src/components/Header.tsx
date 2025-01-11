@@ -21,7 +21,7 @@ const Header = () => {
     if (element) {
       const offset = 100; // Offset to account for fixed header
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      const offsetPosition = elementPosition + window.scrollY - offset;
       
       window.scrollTo({
         top: offsetPosition,
