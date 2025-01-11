@@ -9,7 +9,14 @@ const Hero = () => {
   const scrollToSchedule = () => {
     const scheduleElement = document.getElementById('schedule');
     if (scheduleElement) {
-      scheduleElement.scrollIntoView({ behavior: 'smooth' });
+      const offset = 100; // Offset to account for fixed header
+      const elementPosition = scheduleElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -35,7 +42,19 @@ const Hero = () => {
             <ArrowRight className="w-4 h-4" />
           </button>
           <button 
-            onClick={scrollToSchedule}
+            onClick={() => {
+              const problemsElement = document.getElementById('problems');
+              if (problemsElement) {
+                const offset = 100;
+                const elementPosition = problemsElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+                
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
             className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-colors"
           >
             {t.hero.viewWork}

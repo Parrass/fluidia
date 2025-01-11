@@ -1,6 +1,5 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 const FluidLogo = () => {
   return (
@@ -20,7 +19,14 @@ const Header = () => {
   const handleScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 100; // Offset to account for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
@@ -35,13 +41,13 @@ const Header = () => {
         
         <div className="hidden md:flex items-center gap-8">
           <button 
-            onClick={() => handleScroll('solutions')} 
+            onClick={() => handleScroll('problems')} 
             className="text-neutral-200 hover:text-white transition-colors"
           >
             Soluções
           </button>
           <button 
-            onClick={() => handleScroll('services')} 
+            onClick={() => handleScroll('benefits')} 
             className="text-neutral-200 hover:text-white transition-colors"
           >
             Serviços
@@ -66,13 +72,13 @@ const Header = () => {
         <div className="md:hidden mt-2 container-padding py-4 bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl">
           <div className="flex flex-col gap-4">
             <button 
-              onClick={() => handleScroll('solutions')} 
+              onClick={() => handleScroll('problems')} 
               className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Soluções
             </button>
             <button 
-              onClick={() => handleScroll('services')} 
+              onClick={() => handleScroll('benefits')} 
               className="text-neutral-200 hover:text-white transition-colors text-left"
             >
               Serviços
