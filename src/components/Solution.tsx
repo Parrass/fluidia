@@ -4,7 +4,7 @@ const features = [
   {
     icon: <Bot className="w-8 h-8 text-accent" />,
     title: "Automação Inteligente",
-    description: "Nossos agentes de IA lidam com tarefas rotineiras e interações com clientes automaticamente."
+    description: "Nossos assistentes virtuais via WhatsApp lidam com tarefas rotineiras e interações com clientes automaticamente."
   },
   {
     icon: <Clock className="w-8 h-8 text-accent" />,
