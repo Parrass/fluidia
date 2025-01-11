@@ -5,7 +5,7 @@ const steps = [
   {
     number: "1",
     title: "Consultoria gratuita",
-    description: "Fale com um engenheiro de sistemas real (normalmente +R$500/hora) e discuta os requisitos e objetivos do seu projeto. Ouviremos atentamente para entender sua visão e objetivos.",
+    description: "Fale com um engenheiro real (normalmente +R$500/hora) e discuta os requisitos e objetivos do seu projeto. Ouviremos atentamente para entender sua visão e objetivos.",
     icon: Users,
   },
   {
