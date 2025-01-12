@@ -4,20 +4,20 @@
 
 @layer base {
   :root {
-    --background: 228 22% 14%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
     --radius: 0.5rem;
   }
 
   body {
-    @apply bg-neutral-50 text-neutral-900 antialiased;
+    @apply bg-neutral-50 text-primary antialiased;
     font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv03" on;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-neutral-100/10 backdrop-blur-lg border border-neutral-200/10 shadow-lg;
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg;
   }
   
   .container-padding {
