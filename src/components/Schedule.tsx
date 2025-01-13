@@ -22,12 +22,19 @@ const Schedule = () => {
             Escolha o melhor horário para conversarmos sobre como podemos ajudar sua empresa a crescer com automação inteligente.
           </p>
         </div>
-        <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-4 mb-24">
-          <div className="h-[600px] sm:h-[700px] w-full">
+        <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-4 mb-12">
+          <div className="aspect-[4/3] sm:aspect-[16/9] w-full relative">
             <Cal
               namespace="reuniao-de-automacoes-com-ia"
               calLink="luiz-parras/reuniao-de-automacoes-com-ia"
-              style={{width:"100%", height:"100%", borderRadius: "1rem"}}
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                top: 0,
+                left: 0,
+                borderRadius: "1rem"
+              }}
               config={{
                 layout: "month_view",
                 hideEventTypeDetails: "false"
