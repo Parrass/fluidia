@@ -23,7 +23,7 @@ const Schedule = () => {
           </p>
         </div>
         <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-4 mb-24">
-          <div className="h-[600px] sm:h-[700px] w-full">
+          <div className="h-[800px] sm:h-[900px] w-full">
             <Cal
               namespace="reuniao-de-automacoes-com-ia"
               calLink="luiz-parras/reuniao-de-automacoes-com-ia"
