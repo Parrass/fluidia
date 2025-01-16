@@ -19,7 +19,7 @@ const Header = () => {
   const handleScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      const offset = 100;
+      const offset = 100; // Offset to account for fixed header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;
       
@@ -35,7 +35,7 @@ const Header = () => {
     <header className="fixed top-4 left-4 right-4 z-50">
       <nav className="container-padding mx-auto flex h-16 items-center justify-between bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl shadow-lg">
         <a href="/" className="flex items-center gap-3 text-xl font-semibold text-white hover:text-accent transition-colors">
-          <img src="/lovable-uploads/7066a94e-c7f0-43a7-892c-5f1277e805f0.png" alt="Magic Wand" className="h-8 w-auto invert" />
+          <FluidLogo />
           Fluid AI
         </a>
         
