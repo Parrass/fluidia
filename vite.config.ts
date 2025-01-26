@@ -10,9 +10,6 @@ export default defineConfig(({ mode }) => ({
     fs: {
       strict: true,
     },
-    headers: {
-      'Content-Type': 'application/javascript',
-    },
   },
   plugins: [
     react(),
