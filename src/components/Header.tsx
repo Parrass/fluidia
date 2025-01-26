@@ -36,14 +36,7 @@ const Header = () => {
       <nav className="container-padding mx-auto flex h-16 items-center justify-between bg-neutral-900/30 backdrop-blur-sm border border-white/10 rounded-2xl shadow-lg">
         <a href="/" className="flex items-center gap-3 text-xl font-semibold text-white hover:text-accent transition-colors">
           <FluidLogo />
-          <div className="flex items-center gap-2">
-            <img 
-              src="c18af634-058b-497f-9e0a-5a2e7461605a.png" 
-              alt="Magic Wand" 
-              className="w-6 h-6 invert"
-            />
-            Fluid AI
-          </div>
+          <span>Fluid AI</span>
         </a>
         
         <div className="hidden md:flex items-center gap-8">
