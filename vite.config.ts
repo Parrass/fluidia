@@ -10,6 +10,17 @@ export default defineConfig(({ mode }) => ({
     fs: {
       strict: true,
     },
+    headers: {
+      "*.js": {
+        "Content-Type": "application/javascript",
+      },
+      "*.ts": {
+        "Content-Type": "application/javascript",
+      },
+      "*.tsx": {
+        "Content-Type": "application/javascript",
+      },
+    },
   },
   plugins: [
     react(),
@@ -30,9 +41,9 @@ export default defineConfig(({ mode }) => ({
       },
       output: {
         format: 'es',
-        entryFileNames: '[name].[hash].js',
-        chunkFileNames: '[name].[hash].js',
-        assetFileNames: '[name].[hash].[ext]'
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
     },
   },
