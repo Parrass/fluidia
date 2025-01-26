@@ -11,15 +11,7 @@ export default defineConfig(({ mode }) => ({
       strict: true,
     },
     headers: {
-      "*.js": {
-        "Content-Type": "application/javascript",
-      },
-      "*.ts": {
-        "Content-Type": "application/javascript",
-      },
-      "*.tsx": {
-        "Content-Type": "application/javascript",
-      },
+      'Content-Type': 'application/javascript',
     },
   },
   plugins: [
