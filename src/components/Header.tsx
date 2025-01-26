@@ -38,7 +38,7 @@ const Header = () => {
           <FluidLogo />
           <div className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/c18af634-058b-497f-9e0a-5a2e7461605a.png" 
+              src="c18af634-058b-497f-9e0a-5a2e7461605a.png" 
               alt="Magic Wand" 
               className="w-6 h-6 invert"
             />
