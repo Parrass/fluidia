@@ -10,14 +10,9 @@ export default defineConfig(({ mode }) => ({
     fs: {
       strict: true,
     },
-    headers: {
-      "Content-Type": "application/javascript",
-    },
   },
   plugins: [
-    react({
-      tsDecorators: true,
-    }),
+    react(),
     mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -33,6 +28,12 @@ export default defineConfig(({ mode }) => ({
       input: {
         main: path.resolve(__dirname, 'index.html'),
       },
+      output: {
+        format: 'es',
+        entryFileNames: '[name].[hash].js',
+        chunkFileNames: '[name].[hash].js',
+        assetFileNames: '[name].[hash].[ext]'
+      }
     },
   },
   optimizeDeps: {
